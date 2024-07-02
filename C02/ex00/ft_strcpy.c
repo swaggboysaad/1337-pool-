@@ -1,27 +1,22 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/02 10:41:53 by szaoual           #+#    #+#             */
-/*   Updated: 2024/07/02 10:59:00 by szaoual          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include <stdio.h>
 
-#include <unistd.h>
-
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest,char *src)
 {
-	int	i;
+	int i = 0;
 
-	i = 0;
-	while (src[i] != 0)
+	while(src[i])
 	{
 		dest[i] = src[i];
 		i++;
-		dest[i] = '\0';
 	}
-	return (dest);
+	dest[i] = '\0';
+	return dest;
+}
+int main()
+{
+	char src[] = "test";
+	char dest[5];
+	ft_strcpy(dest,src);
+	printf("%s \n", dest);
+	return 0;
 }
