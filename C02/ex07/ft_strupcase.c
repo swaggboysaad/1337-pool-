@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 char	*ft_strupcase(char *str)
 {
 	int i;
@@ -11,10 +11,5 @@ char	*ft_strupcase(char *str)
 		}
 		i++;
 	}
-}
-int main()
-{
-	char str[] = "saad zaoual";
-	ft_strupcase(str);
-	printf("%s \n",str);
+	return str;
 }

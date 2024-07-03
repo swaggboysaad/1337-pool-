@@ -17,9 +17,3 @@ int     ft_str_is_uppercase(char *str)
         }
         return(1);
 }
-int main()
-{
-        char str[] = "";
-        int resault = ft_str_is_uppercase(str);
-        printf("%i \n",resault);
-}

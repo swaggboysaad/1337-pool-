@@ -13,10 +13,5 @@ char	*ft_strlowcase(char *str)
 		}
 		i++;
 	}
-}
-int main()
-{
-	char str[] ="SAAD ZAOUAL";
-	ft_strlowcase(str);
-	printf("%s \n" , str);
+	return str;
 }

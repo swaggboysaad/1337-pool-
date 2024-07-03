@@ -17,10 +17,3 @@ int	ft_str_is_alpha(char *str)
 	}
 	return (1);
 }
-int main()
-{
-	char str[] = "Hell%$^orld";
-	int resault = ft_str_is_alpha(str);
-	printf("%i \n",resault);
-	return 0;
-}

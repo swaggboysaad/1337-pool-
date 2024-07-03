@@ -16,9 +16,3 @@ int	ft_str_is_numeric(char *str)
 	}
 	return (1);
 }
-int main()
-{
-	char str[] = "";
-	int resault = ft_str_is_numeric(str);
-	printf("%i \n", resault);
-}

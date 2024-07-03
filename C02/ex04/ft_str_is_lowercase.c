@@ -17,9 +17,3 @@ int	ft_str_is_lowercase(char *str)
 	}
 	return(1);
 }
-int main()
-{
-	char str[] = "";
-	int resault = ft_str_is_lowercase(str);
-	printf("%i \n",resault);
-}
